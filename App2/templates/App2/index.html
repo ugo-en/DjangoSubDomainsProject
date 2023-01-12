@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% load static %}
+{% load hosts %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>App2</title>
+    <link rel="stylesheet" href="{% static 'App2\css\style.css' %}">
+</head>
+<body>
+    <h1>You are currently in app2!</h1>
+    <a href="{% host_url 'home' host 'app1' %}">App1</a>
+    <a href="{% host_url 'home' host 'app2' %}">App2</a>
+</body>
+</html>
